@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="shortcut icon" href="image/Rose.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="">
+        <div class="my-5 col-12 lovecalDiv">
+            <div>
+                <div id="dateshow" style="background: transparent; color:white;" class="text-center"></div>
+                <h1 class="text-light text-center" style="font-family:cursive; font-weight: bold;">A Lover Calculator For Valetine</h1>
+                <p class="text-center text-light" style="font-family: 'Lobster', sans-serif;">Embrace the magic of love 💖 Explore our enchanting world where every moment is a love story waiting to be written.!</p>
+                <!-- <p class="text-center text-light sm-hidden">If you can believe it, you can live in it.</p> -->
+                <!-- <p class="text-center text-light"><i>If you can try it, then you can believe in it</i></p> -->
+                <!-- <p class="text-center text-light sm-hidden"><i>Always remember love is like a seed sown, which grows day by day.</i></p> -->
+            </div>
+            <div class="cssload-main">
+                <div class="cssload-heart">
+                    <span class="cssload-heartL"></span>
+                    <span class="cssload-heartR"></span>
+                    <span class="cssload-square"></span>
+                </div>
+                <div class="cssload-shadow"></div>
+            </div>
+            <div id="imagesDivShow"></div>
+                        
+            <div id="imageAvaterDisplay">
+                <h5>Choose Avater</h5>
+                <div style="display: flex;" id="avatarList">
+                    <img src="image/pexels-sơn-ngọc-19259431.jpg" alt="" style="height: 50px;" width="25%" onclick="imageAvater1()">
+                    <img src="image/female anime.png" alt="" width="28%" style="height: 50px;" onclick="imageAvater5()">
+                    <img src="image/male anime.png" alt="" width="28%" style="height: 50px;" onclick="imageAvater3()">
+                    <img src="image/Grey Illustration Couple Phone Wallpaper.png" style="height: 50px;" width="25%" onclick="imageAvater4()" alt="">
+                    <img src="image/wallpaperNew.PNG" alt="" width="25%" style="height: 50px;" onclick="imageAvater2()">
+                </div>
+            </div>
+            <div id="imagesDiv">
+                <div class="mx-auto col-1" id="cardi">
+                    <img src="image/female anime.png" class="cardiImage" onclick="changeAvater()">
+                </div>
+                <div class="mx-auto col-1" id="cardii">
+                    <img src="image/male anime.png" alt="" class="cardiImage">
+                </div>
+            </div>
+            <div id="cssload-container">
+                <ul class="cssload-flex-container">
+                   <li>
+                      <span class="cssload-loading cssload-one"></span>
+                      <span class="cssload-loading cssload-two"></span>
+                      <span class="cssload-loading-center"></span>
+                   </li>
+                </ul>
+             </div>
+            <p class="text-center text-light" style="font-family: 'Lobster', sans-serif;">Enjoy the moment!!!!</p>
+        </div>
+        <div class="container mx-auto text-center shadow-sm inputDiv">
+            <div class="alert alert-danger col-lg-4 col-4 mx-auto p-2 my-2 text-danger" style="display: none;" id="errMsg">Hey Lovies, spaces must not be empty</div>
+            <div class="col-12">
+                <input type="text" placeholder="💙 Input Player's Name 💙" id="firstInpt" class="p-2 shadow-none border-0" autofocus>
+                <input type="text" placeholder="💕 Input 💖ers Name 💕 " id="secondInpt" class="p-2 shadow-none border-0">
+            </div>
+            <div class="col-lg-12 col-sm-12 mx-auto">
+                <button onclick="testLove()" class="text-center px-5 py-3 mt-3 buttonTest" style="background-color:#242418; color:rosybrown">Calculate Love Percentage</button>
+            </div>
+            <div id="displayLove"></div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+</body>
+</html>
